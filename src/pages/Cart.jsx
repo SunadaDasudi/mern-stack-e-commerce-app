@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import RemoveIcon from "@mui/icons-material/Remove";
-import AddIcon from "@mui/icons-material/Add";
+import { IoIosRemoveCircleOutline } from "react-icons/io";
+import { GrAddCircle } from "react-icons/gr";
 
 import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
@@ -209,9 +209,9 @@ function Cart() {
               </ProductDetails>
               <PriceDetails>
                 <QuantityContainer>
-                  <RemoveIcon />
+                  <IoIosRemoveCircleOutline />
                   <Quantity>1</Quantity>
-                  <AddIcon />
+                  <GrAddCircle />
                 </QuantityContainer>
                 <Price>189kr</Price>
               </PriceDetails>
@@ -235,9 +235,9 @@ function Cart() {
               </ProductDetails>
               <PriceDetails>
                 <QuantityContainer>
-                  <RemoveIcon />
+                  <IoIosRemoveCircleOutline />
                   <Quantity>2</Quantity>
-                  <AddIcon />
+                  <GrAddCircle />
                 </QuantityContainer>
                 <Price>179kr</Price>
               </PriceDetails>

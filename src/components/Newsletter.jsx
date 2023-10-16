@@ -1,4 +1,4 @@
-import { Send } from "@mui/icons-material";
+import { BiSolidSend } from "react-icons/bi";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
@@ -56,7 +56,7 @@ function Newsletter() {
       <InputContainer>
         <Input placeholder="Your email" type={"email"} required />
         <Button>
-          <Send type={"submit"}></Send>
+          <BiSolidSend type={"submit"}></BiSolidSend>
         </Button>
       </InputContainer>
     </Container>

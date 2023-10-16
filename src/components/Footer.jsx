@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import RoomIcon from "@mui/icons-material/Room";
-import PhonelinkRingIcon from "@mui/icons-material/PhonelinkRing";
-import EmailIcon from "@mui/icons-material/Email";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { BsPinterest } from "react-icons/bs";
+import { MdOutlineRoomPreferences } from "react-icons/md";
+import { AiFillPhone } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
@@ -98,16 +98,16 @@ function Footer() {
         </Description>
         <SocialContainer>
           <SocialIcon color="3b5999">
-            <FacebookIcon />
+            <BsFacebook />
           </SocialIcon>
           <SocialIcon color="e4405f">
-            <InstagramIcon />
+            <AiFillInstagram />
           </SocialIcon>
           <SocialIcon color="55acee">
-            <TwitterIcon />
+            <AiFillTwitterCircle />
           </SocialIcon>
           <SocialIcon color="e60023">
-            <PinterestIcon />
+            <BsPinterest />
           </SocialIcon>
         </SocialContainer>
       </Left>
@@ -129,15 +129,15 @@ function Footer() {
       <Right>
         <Title>Conatct</Title>
         <ContactItem>
-          <RoomIcon style={{ marginRight: "10px" }} />
+          <MdOutlineRoomPreferences style={{ marginRight: "10px" }} />
           Vildandsvägen 18D227 34 Lund
         </ContactItem>
         <ContactItem>
-          <PhonelinkRingIcon style={{ marginRight: "10px" }} />
+          <AiFillPhone style={{ marginRight: "10px" }} />
           +46 0762976206
         </ContactItem>
         <ContactItem>
-          <EmailIcon style={{ marginRight: "10px" }} />
+          <AiOutlineMail style={{ marginRight: "10px" }} />
           sunada.dasudi2010@gmail.com
         </ContactItem>
         <Payment src="https://n1gloves.com/img/cms/pagos_1.png" />

@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
-import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import { useState } from "react";
 import { mobile } from "../responsive";
 
@@ -95,7 +95,7 @@ function Slider() {
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        <ArrowBackIosNewOutlinedIcon />
+        <AiOutlineArrowLeft />
       </Arrow>
       <Wrapper index={slideIndex}>
         {sliderItems.map((item) => (
@@ -112,7 +112,7 @@ function Slider() {
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-        <ArrowForwardIosOutlinedIcon />
+        <AiOutlineArrowRight />
       </Arrow>
     </Container>
   );

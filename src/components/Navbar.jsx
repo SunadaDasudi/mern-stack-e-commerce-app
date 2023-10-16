@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import { Search } from "@mui/icons-material";
-import Badge from "@mui/material/Badge";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { AiOutlineSearch } from "react-icons/ai";
+import { BiSolidBadge } from "react-icons/bi";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
   ${mobile({
     height: "50px",
-    width: "100%",
-  })}%
+    width: "100%"
+  })}
 `;
 
 const Wrapper = styled.div`
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   ${mobile({
-    padding: "10px 0",
+    padding: "10px 0"
   })}
 `;
 
@@ -31,7 +31,7 @@ const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
   ${mobile({
-    display: "none",
+    display: "none"
   })}
 `;
 
@@ -45,7 +45,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border: none;
   ${mobile({
-    width: "50px",
+    width: "50px"
   })}
 `;
 
@@ -82,7 +82,9 @@ function Navbar() {
           <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />
-            <Search style={{ color: "gray", fontsize: 16 }}></Search>
+            <AiOutlineSearch
+              style={{ color: "gray", fontsize: 16 }}
+            ></AiOutlineSearch>
           </SearchContainer>
         </Left>
         <Center>
@@ -92,9 +94,9 @@ function Navbar() {
           <MenuItem>Register</MenuItem>
           <MenuItem>Sign In</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="secondary">
-              <ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon>
-            </Badge>
+            <BiSolidBadge badgeContent={4} color="secondary">
+              <AiOutlineShoppingCart></AiOutlineShoppingCart>
+            </BiSolidBadge>
           </MenuItem>
         </Right>
       </Wrapper>

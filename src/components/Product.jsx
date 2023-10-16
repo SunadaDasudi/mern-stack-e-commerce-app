@@ -1,6 +1,6 @@
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
+import { GrFavorite } from "react-icons/gr";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -72,13 +72,13 @@ function Product({ image }) {
       <Image src={image}></Image>
       <Info>
         <Icon>
-          <ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon>
+          <AiOutlineShoppingCart></AiOutlineShoppingCart>
         </Icon>
         <Icon>
-          <SearchOutlinedIcon></SearchOutlinedIcon>
+          <AiOutlineSearch></AiOutlineSearch>
         </Icon>
         <Icon>
-          <FavoriteBorderOutlinedIcon></FavoriteBorderOutlinedIcon>
+          <GrFavorite></GrFavorite>
         </Icon>
       </Info>
     </Container>
